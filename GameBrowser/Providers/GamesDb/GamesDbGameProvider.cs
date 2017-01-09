@@ -602,232 +602,276 @@ namespace GameBrowser.Providers.GamesDb
 
             switch (gameSystem)
             {
-                case "3DO":
-                    tgdbPlatformString = "3DO";
-
-                    break;
-
-                case "Amiga":
-                    tgdbPlatformString = "Amiga";
-
-                    break;
-
                 case "Arcade":
                     tgdbPlatformString = "Arcade";
-
                     break;
 
-                case "Atari 2600":
-                    tgdbPlatformString = "Atari 2600";
 
+                case "Atari 2600":
+                    tgdbPlatformString = "Atari 2600";        
                     break;
 
                 case "Atari 5200":
                     tgdbPlatformString = "Atari 5200";
-
                     break;
 
                 case "Atari 7800":
                     tgdbPlatformString = "Atari 7800";
-
-                    break;
-
-                case "Atari XE":
-                    tgdbPlatformString = "Atari XE";
-
                     break;
 
                 case "Atari Jaguar":
                     tgdbPlatformString = "Atari Jaguar";
-
                     break;
 
                 case "Atari Jaguar CD":
                     tgdbPlatformString = "Atari Jaguar CD";
-
                     break;
 
-                case "Colecovision":
+                case "Atari XE":
+                    tgdbPlatformString = "Atari XE";
+                    break;
+
+                case "Bally Astrocade":
+                    tgdbPlatformString = "Bally Astrocade";
+                    break;
+
+                case "ColecoVision":
                     tgdbPlatformString = "Colecovision";
-
                     break;
 
-                case "Commodore 64":
-                    tgdbPlatformString = "Commodore 64";
-
+                case "Commodore Amiga CD32":
+                    tgdbPlatformString = "Amiga CD32";
                     break;
 
-                case "Commodore Vic-20":
-                    tgdbPlatformString = "Commodore Vic-20";
-
+                case "Fairchild Channel F":
+                    tgdbPlatformString = "Fairchild Channel F";
                     break;
 
-                case "Intellivision":
+                case "GCE Vectrex":
+                    tgdbPlatformString = "Vectrex";
+                    break;
+
+                case "Magnavox Odyssey":
+                    tgdbPlatformString = "Magnavox Odyssey 1";
+                    break;
+
+                case "Magnavox Odyssey 2":
+                    tgdbPlatformString = "Magnavox Odyssey 2";
+                    break;
+
+                case "Mattel Intellivision":
                     tgdbPlatformString = "Intellivision";
-
                     break;
-
-                case "Xbox":
+                case "Microsoft Xbox":
                     tgdbPlatformString = "Microsoft Xbox";
-
                     break;
 
-                case "Xbox 360":
+                case "Microsoft Xbox 360":
                     tgdbPlatformString = "Microsoft Xbox 360";
-
                     break;
 
-                case "Xbox One":
+                case "Microsoft Xbox One":
                     tgdbPlatformString = "Microsoft Xbox One";
-
                     break;
 
-                case "Neo Geo":
-                    tgdbPlatformString = "NeoGeo";
+                case "NEC PC-FX":
+                    tgdbPlatformString = "PC-FX";
+                    break;
 
+                case "NEC SuperGrafx":
+                    tgdbPlatformString = "Nintendo Game Boy Advance";
+                    break;
+
+                case "NEC TurboGrafx 16":
+                    tgdbPlatformString = "TurboGrafx 16";
+                    break;
+
+                case "NEC TurboGrafx CD":
+                    tgdbPlatformString = "TurboGrafx CD";
                     break;
 
                 case "Nintendo 64":
                     tgdbPlatformString = "Nintendo 64";
-
                     break;
 
-                case "Nintendo DS":
-                    tgdbPlatformString = "Nintendo DS";
-
+                case "Nintendo Famicom Disk System":
+                    tgdbPlatformString = "Famicom Disk System";                    
                     break;
 
-                case "Nintendo":
-                    tgdbPlatformString = "Nintendo Entertainment System (NES)";
-
-                    break;
-
-                case "Game Boy":
-                    tgdbPlatformString = "Nintendo Game Boy";
-
-                    break;
-
-                case "Game Boy Advance":
-                    tgdbPlatformString = "Nintendo Game Boy Advance";
-
-                    break;
-
-                case "Game Boy Color":
-                    tgdbPlatformString = "Nintendo Game Boy Color";
-
-                    break;
-
-                case "Gamecube":
+                case "Nintendo GameCube":
                     tgdbPlatformString = "Nintendo GameCube";
-
                     break;
 
-                case "Super Nintendo":
+                case "Nintendo NES":
+                    tgdbPlatformString = "Nintendo Entertainment System (NES)";
+                    break;
+
+                case "Nintendo SNES":
                     tgdbPlatformString = "Super Nintendo (SNES)";
-
                     break;
 
-                case "Virtual Boy":
+                case "Nintendo Virtual Boy":
                     tgdbPlatformString = "Nintendo Virtual Boy";
-                    
                     break;
 
                 case "Nintendo Wii":
                     tgdbPlatformString = "Nintendo Wii";
-
                     break;
 
                 case "Nintendo Wii U":
                     tgdbPlatformString = "Nintendo Wii U";
-
-                    break;
-                    
-                case "DOS":
-                    tgdbPlatformString = "PC";
-
                     break;
 
-                case "Windows":
-                    tgdbPlatformString = "PC";
+                case "Panasonic 3DO":
+                    tgdbPlatformString = "3DO";
+                    break;
 
+                case "Philips CD-i":
+                    tgdbPlatformString = "Philips CD-i";
                     break;
 
                 case "Sega 32X":
                     tgdbPlatformString = "Sega 32X";
-
                     break;
 
                 case "Sega CD":
                     tgdbPlatformString = "Sega CD";
-
                     break;
 
                 case "Sega Dreamcast":
                     tgdbPlatformString = "Sega Dreamcast";
-
-                    break;
-
-                case "Game Gear":
-                    tgdbPlatformString = "Sega Game Gear";
-
-                    break;
-
-                case "Sega Genesis":
-                    tgdbPlatformString = "Sega Genesis";
-
                     break;
 
                 case "Sega Master System":
                     tgdbPlatformString = "Sega Master System";
-
                     break;
 
                 case "Sega Mega Drive":
-                    tgdbPlatformString = "Sega Genesis";
-
+                    tgdbPlatformString = "Sega Mega Drive";
                     break;
 
                 case "Sega Saturn":
                     tgdbPlatformString = "Sega Saturn";
+                    break;
 
+                case "Sega SG-1000 & SG-1000II":
+                    tgdbPlatformString = "Sega SG-1000";
+                    break;
+
+                case "SNK Neo-Geo AES":
+                    tgdbPlatformString = "Neo Geo";
+                    break;
+
+                case "SNK Neo-Geo CD":
+                    tgdbPlatformString = "Neo Geo CD";
                     break;
 
                 case "Sony Playstation":
                     tgdbPlatformString = "Sony Playstation";
-
                     break;
 
-                case "PS2":
+                case "Sony Playstation 2":
                     tgdbPlatformString = "Sony Playstation 2";
-
                     break;
 
-                case "PS3":
+                case "Sony Playstation 3":
                     tgdbPlatformString = "Sony Playstation 3";
-
                     break;
 
-                case "PS4":
+                case "Sony Playstation 4":
                     tgdbPlatformString = "Sony Playstation 4";
-
                     break;
 
-                case "PSP":
+                case "Atari Lynx":
+                    tgdbPlatformString = "Atari Lynx";
+                    break;
+
+                case "Bandai Wonderswan":
+                    tgdbPlatformString = "WonderSwan";
+                    break;
+
+                case "Bandai Wonderswan Color":
+                    tgdbPlatformString = "WonderSwan Color";
+                    break;
+
+                case "Nintendo 3DS":
+                    tgdbPlatformString = "Nintendo 3DS";
+                    break;
+
+                case "Nintendo DS":
+                    tgdbPlatformString = "Nintendo DS";
+                    break;
+
+                case "Nintendo Game Boy":
+                    tgdbPlatformString = "Nintendo Game Boy";
+                    break;
+
+                case "Nintendo Game Boy Advance":
+                    tgdbPlatformString = "Nintendo Game Boy Advance";
+                    break;
+
+                case "Nintendo Game Boy Color":
+                    tgdbPlatformString = "Nintendo Game Boy Color";
+                    break;
+
+                case "Sega Game Gear":
+                    tgdbPlatformString = "Sega Game Gear";
+                    break;
+
+                case "SNK Neo-Geo Pocket":
+                    tgdbPlatformString = "Neo Geo Pocket";
+                    break;
+
+                case "SNK Neo-Geo Pocket Color":
+                    tgdbPlatformString = "Neo Geo Pocket Color";
+                    break;
+
+                case "Sony PSP":
                     tgdbPlatformString = "Sony PSP";
-
                     break;
 
-                case "TurboGrafx 16":
-                    tgdbPlatformString = "TurboGrafx 16";
-
+                case "Sony PSVita":
+                    tgdbPlatformString = "Sony Playstation Vita";
                     break;
 
-                case "TurboGrafx CD":
-                    tgdbPlatformString = "TurboGrafx CD";
+                case "Apple iOS":
+                    tgdbPlatformString = "iOS";
                     break;
 
-                case "ZX Spectrum":
-                    tgdbPlatformString = "ZX Spectrum";
+                case "Google Android":
+                    tgdbPlatformString = "Android";
+                    break;
+
+                case "Commodore Vic-20":
+                    tgdbPlatformString = "Commodore Vic-20";
+                    break;
+
+                case "Microsoft MS-DOS":
+                    tgdbPlatformString = "PC";
+                    break;
+
+                case "Microsoft MSX":
+                    tgdbPlatformString = "MSX";
+                    break;
+
+                case "Microsoft Windows":
+                    tgdbPlatformString = "PC";
+                    break;
+
+                case "NEC PC-88":
+                    tgdbPlatformString = "PC-88";
+                    break;
+
+                case "NEC-PC-98":
+                    tgdbPlatformString = "PC-98";
+                    break;
+
+                case "Sharp X68000":
+                    tgdbPlatformString = "Sharp X68000";
+                    break;
+
+                case "Sinclair ZX Spectrum":
+                    tgdbPlatformString = "Sinclair ZX Spectrum";
                     break;
             }
 

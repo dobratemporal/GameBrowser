@@ -1,0 +1,8 @@
+C:\Users\Marcelo.DOBRATEMPORAL\Desktop\GameBrowser-master\GameBrowser-master\GameBrowser\bin\Release\GameBrowser.dll
+C:\Users\Marcelo.DOBRATEMPORAL\Desktop\GameBrowser-master\GameBrowser-master\GameBrowser\bin\Release\GameBrowser.pdb
+C:\Users\Marcelo.DOBRATEMPORAL\Desktop\GameBrowser-master\GameBrowser-master\GameBrowser\bin\Release\MediaBrowser.Common.dll
+C:\Users\Marcelo.DOBRATEMPORAL\Desktop\GameBrowser-master\GameBrowser-master\GameBrowser\bin\Release\MediaBrowser.Controller.dll
+C:\Users\Marcelo.DOBRATEMPORAL\Desktop\GameBrowser-master\GameBrowser-master\GameBrowser\bin\Release\MediaBrowser.Model.dll
+C:\Users\Marcelo.DOBRATEMPORAL\Desktop\GameBrowser-master\GameBrowser-master\GameBrowser\obj\Release\GameBrowser.csprojResolveAssemblyReference.cache
+C:\Users\Marcelo.DOBRATEMPORAL\Desktop\GameBrowser-master\GameBrowser-master\GameBrowser\obj\Release\GameBrowser.dll
+C:\Users\Marcelo.DOBRATEMPORAL\Desktop\GameBrowser-master\GameBrowser-master\GameBrowser\obj\Release\GameBrowser.pdb

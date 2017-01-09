@@ -126,18 +126,13 @@ namespace GameBrowser.Providers.EmuMovies
 
             switch (platform)
             {
-                case "3DO":
-                    emuMoviesPlatform = "Panasonic_3DO";
-
-                    break;
-
-                case "Amiga":
-                    emuMoviesPlatform = "";
-
-                    break;
-
                 case "Arcade":
                     emuMoviesPlatform = "MAME";
+
+                    break;
+
+                case "Amstrad GX4000":
+                    emuMoviesPlatform = "GX4000";
 
                     break;
 
@@ -156,177 +151,342 @@ namespace GameBrowser.Providers.EmuMovies
 
                     break;
 
-                case "Atari XE":
-                    emuMoviesPlatform = "Atari_8_bit";
-
-                    break;
-
                 case "Atari Jaguar":
                     emuMoviesPlatform = "Atari_Jaguar";
 
                     break;
 
                 case "Atari Jaguar CD":
-                    emuMoviesPlatform = "Atari_Jaguar";
+                    emuMoviesPlatform = "Atari_Jaguar_CD";
 
                     break;
 
-                case "Colecovision":
-                    emuMoviesPlatform = "Coleco_Vision";
+                case "Atari XE":
+                    emuMoviesPlatform = "Atari_8-Bit";
 
                     break;
 
-                case "Commodore 64":
-                    emuMoviesPlatform = "Commodore_64";
+                case "Bally Astrocade":
+                    emuMoviesPlatform = "Bally_Astrocade";
 
                     break;
 
-                case "Commodore Vic-20":
+                case "ColecoVision":
+                    emuMoviesPlatform = "Colecovision";
+
+                    break;
+
+                case "Commodore Amiga CD32":
+                    emuMoviesPlatform = "Amiga_CD32";
+
+                    break;
+
+                case "Entex Adventure Vision":
+                    emuMoviesPlatform = "Adventure_Vision";
+
+                    break;
+
+                case "Fairchild Channel F":
+                    emuMoviesPlatform = "Channel_F";
+
+                    break;
+
+                case "GCE Vectrex":
+                    emuMoviesPlatform = "Vectrex";
+
+                    break;
+
+                case "Magnavox Odyssey":
+                    emuMoviesPlatform = "Magnavox_Odyssey";
+
+                    break;
+
+                case "Magnavox Odyssey 2":
+                    emuMoviesPlatform = "Odyssey_2";
+
+                    break;
+
+                case "Mattel Intellivision":
+                    emuMoviesPlatform = "Intellivision";
+
+                    break;
+
+                case "Microsoft Xbox":
+                    emuMoviesPlatform = "Xbox";
+
+                    break;
+
+                case "Microsoft Xbox 360":
                     emuMoviesPlatform = "";
 
                     break;
 
-                case "Intellivision":
-                    emuMoviesPlatform = "Mattel_Intellivision";
+                case "Microsoft Xbox One":
+                    emuMoviesPlatform = "";
 
                     break;
 
-                case "Xbox":
-                    emuMoviesPlatform = "Microsoft_Xbox";
+                case "NEC PC-FX":
+                    emuMoviesPlatform = "PC-FX";
 
                     break;
 
-                case "Neo Geo":
-                    emuMoviesPlatform = "SNK_Neo_Geo_AES";
+                case "NEC SuperGrafx":
+                    emuMoviesPlatform = "SuperGrafx";
+
+                    break;
+
+                case "NEC TurboGrafx 16":
+                    emuMoviesPlatform = "TurboGrafx-16";
+
+                    break;
+
+                case "NEC TurboGrafx CD":
+                    emuMoviesPlatform = "TurboGrafx-CD";
 
                     break;
 
                 case "Nintendo 64":
-                    emuMoviesPlatform = "Nintendo_N64";
+                    emuMoviesPlatform = "Nintendo_64";
 
                     break;
 
-                case "Nintendo DS":
-                    emuMoviesPlatform = "Nintendo_DS";
+                case "Nintendo Famicom Disk System":
+                    emuMoviesPlatform = "Famicom_Disk_System";
 
                     break;
 
-                case "Nintendo":
-                    emuMoviesPlatform = "Nintendo_NES";
+                case "Nintendo GameCube":
+                    emuMoviesPlatform = "GameCube";
 
                     break;
 
-                case "Game Boy":
-                    emuMoviesPlatform = "Nintendo_Game_Boy";
+                case "Nintendo NES":
+                    emuMoviesPlatform = "NES_Unified";
 
                     break;
 
-                case "Game Boy Advance":
-                    emuMoviesPlatform = "Nintendo_Game_Boy_Advance";
+                case "Nintendo SNES":
+                    emuMoviesPlatform = "Super_Nintendo";
 
                     break;
 
-                case "Game Boy Color":
-                    emuMoviesPlatform = "Nintendo_Game_Boy_Color";
-
-                    break;
-
-                case "Gamecube":
-                    emuMoviesPlatform = "Nintendo_GameCube";
-
-                    break;
-
-                case "Super Nintendo":
-                    emuMoviesPlatform = "Nintendo_SNES";
-
-                    break;
-
-                case "Virtual Boy":
+                case "Nintendo Switch":
                     emuMoviesPlatform = "";
+
+                    break;
+
+                case "Nintendo Virtual Boy":
+                    emuMoviesPlatform = "Virtual_Boy";
 
                     break;
 
                 case "Nintendo Wii":
+                    emuMoviesPlatform = "Nintendo_Wii";
+
+                    break;
+
+                case "Nintendo Wii U":
                     emuMoviesPlatform = "";
 
                     break;
 
-                case "DOS":
-                    emuMoviesPlatform = "";
+                case "Panasonic 3DO":
+                    emuMoviesPlatform = "3DO";
 
                     break;
 
-                case "Windows":
-                    emuMoviesPlatform = "";
+                case "Philips CD-i":
+                    emuMoviesPlatform = "Philips_CD-i";
 
                     break;
 
                 case "Sega 32X":
-                    emuMoviesPlatform = "Sega_Genesis";
+                    emuMoviesPlatform = "";
 
                     break;
 
                 case "Sega CD":
-                    emuMoviesPlatform = "Sega_Genesis";
+                    emuMoviesPlatform = "";
 
                     break;
 
-                case "Dreamcast":
+                case "Sega CD 32X":
+                    emuMoviesPlatform = "";
+
+                    break;
+
+                case "Sega Dreamcast":
                     emuMoviesPlatform = "Sega_Dreamcast";
 
                     break;
 
-                case "Game Gear":
-                    emuMoviesPlatform = "Sega_Game_Gear";
-
-                    break;
-
-                case "Sega Genesis":
-                    emuMoviesPlatform = "Sega_Genesis";
-
-                    break;
-
                 case "Sega Master System":
-                    emuMoviesPlatform = "Sega_Master_System";
-
+                    emuMoviesPlatform = "Master_System";
                     break;
 
                 case "Sega Mega Drive":
-                    emuMoviesPlatform = "Sega_Genesis";
-
+                    emuMoviesPlatform = "Genesis";
                     break;
 
                 case "Sega Saturn":
-                    emuMoviesPlatform = "Sega_Saturn";
+                    emuMoviesPlatform = "Saturn";
+                    break;
 
+                case "Sega SG-1000 & SG-1000II":
+                    emuMoviesPlatform = "Sega_SG-1000";
+                    break;
+
+                case "SNK Neo-Geo AES":
+                    emuMoviesPlatform = "";
+                    break;
+
+                case "SNK Neo-Geo CD":
+                    emuMoviesPlatform = "";
                     break;
 
                 case "Sony Playstation":
-                    emuMoviesPlatform = "Sony_Playstation";
-
+                    emuMoviesPlatform = "Playstation";
                     break;
 
-                case "PS2":
-                    emuMoviesPlatform = "Sony_Playstation_2";
-
+                case "Sony Playstation 2":
+                    emuMoviesPlatform = "Playstation_2";
                     break;
 
-                case "PSP":
-                    emuMoviesPlatform = "Sony_PSP";
-
-                    break;
-
-                case "TurboGrafx 16":
-                    emuMoviesPlatform = "NEC_TurboGrafx_16";
-
-                    break;
-
-                case "TurboGrafx CD":
-                    emuMoviesPlatform = "NEC_TurboGrafx_16";
-                    break;
-
-                case "ZX Spectrum":
+                case "Sony Playstation 3":
                     emuMoviesPlatform = "";
+                    break;
+
+                case "Sony Playstation 4":
+                    emuMoviesPlatform = "";
+                    break;
+
+                case "WoW Action Max":
+                    emuMoviesPlatform = "Action_Max";
+                    break;
+
+                case "Atari Lynx":
+                    emuMoviesPlatform = "Atari_Lynx";
+                    break;
+
+                case "Bandai Wonderswan":
+                    emuMoviesPlatform = "Wonderswan";
+                    break;
+
+                case "Bandai Wonderswan Color":
+                    emuMoviesPlatform = "Wonderswan_Color";
+                    break;
+
+                case "Nintendo 3DS":
+                    emuMoviesPlatform = "";
+                    break;
+
+                case "Nintendo DS":
+                    emuMoviesPlatform = "Nintendo_DS";
+                    break;
+
+                case "Nintendo Game Boy":
+                    emuMoviesPlatform = "Game_Boy";
+                    break;
+
+                case "Nintendo Game Boy Advance":
+                    emuMoviesPlatform = "GBA";
+                    break;
+
+                case "Nintendo Game Boy Color":
+                    emuMoviesPlatform = "Game_Boy_Color";
+                    break;
+
+                case "Sega Game Gear":
+                    emuMoviesPlatform = "Game_Gear";
+                    break;
+
+                case "SNK Neo-Geo Pocket":
+                    emuMoviesPlatform = "Neo_Geo_Pocket";
+                    break;
+
+                case "SNK Neo-Geo Pocket Color":
+                    emuMoviesPlatform = "Neo_Geo_Pocket_Color";
+                    break;
+
+                case "Sony PSP":
+                    emuMoviesPlatform = "Sony_PSP";
+                    break;
+
+                case "Sony PSVita":
+                    emuMoviesPlatform = "";
+                    break;
+
+                case "Apple iOS":
+                    emuMoviesPlatform = "";
+                    break;
+
+                case "Google Android":
+                    emuMoviesPlatform = "Android";
+                    break;
+
+                case "Microsoft Windows 10 UWP":
+                    emuMoviesPlatform = "";
+                    break;
+
+                case "Commodore Vic-20":
+                    emuMoviesPlatform = "Commodore_Vic-20";
+                    break;
+
+                case "Fujitsu FM Towns":
+                    emuMoviesPlatform = "Fujitsu_FM_Towns";
+                    break;
+
+                case "Fujitsu FM-7":
+                    emuMoviesPlatform = "";
+                    break;
+
+                case "Microsoft MS-DOS":
+                    emuMoviesPlatform = "Microsoft_DOS";
+                    break;
+
+                case "Microsoft MSX":
+                    emuMoviesPlatform = "Microsoft_MSX";
+                    break;
+
+                case "Microsoft MSX-2":
+                    emuMoviesPlatform = "";
+                    break;
+
+                case "Microsoft Windows":
+                    emuMoviesPlatform = "Microsoft_Windows";
+                    break;
+
+                case "NEC PC-60":
+                    emuMoviesPlatform = "";
+                    break;
+
+                case "NEC PC-80":
+                    emuMoviesPlatform = "";
+                    break;
+
+                case "NEC PC-88":
+                    emuMoviesPlatform = "";
+                    break;
+
+                case "NEC-PC-98":
+                    emuMoviesPlatform = "";
+                    break;
+
+                case "Sega SC-3000":
+                    emuMoviesPlatform = "Sega_SC-3000";
+                    break;
+
+                case "Sharp X1":
+                    emuMoviesPlatform = "Sharp_X1";
+                    break;
+
+                case "Sharp X68000":
+                    emuMoviesPlatform = "Sharp_X68000";
+                    break;
+
+                case "Sinclair ZX Spectrum":
+                    emuMoviesPlatform = "ZX_Spectrum";
                     break;
             }
 

@@ -15,8 +15,6 @@ namespace GameBrowser.Resolvers
 
         public static Dictionary<string, int> TgdbId = new Dictionary<string, int>
         {
-                                                        {"3DO", 25},
-                                                        {"Amiga", 4911},
                                                         {"Arcade", 23},
                                                         {"Atari 2600", 22},
                                                         {"Atari 5200", 26},
@@ -24,41 +22,65 @@ namespace GameBrowser.Resolvers
                                                         {"Atari Jaguar", 28},
                                                         {"Atari Jaguar CD", 29},
                                                         {"Atari XE", 30},
-                                                        {"Colecovision", 31},
-                                                        {"Commodore 64", 40},
-                                                        {"DOS", 1},
-                                                        {"Intellivision", 32},
-                                                        {"Xbox", 14},
-                                                        {"Xbox 360", 15},                                                        
-                                                        {"Xbox One", 4920},
-                                                        {"Neo Geo", 24},
+                                                        {"Bally Astrocade", 4968},
+                                                        {"ColecoVision", 31},
+                                                        {"Commodore Amiga CD32", 4947},
+                                                        {"Fairchild Channel F", 4928},
+                                                        {"GCE Vectrex", 4939},
+                                                        {"Magnavox Odyssey", 4961},
+                                                        {"Magnavox Odyssey 2", 4927},
+                                                        {"Mattel Intellivision", 32},
+                                                        {"Microsoft Xbox", 14},
+                                                        {"Microsoft Xbox 360", 15},
+                                                        {"Microsoft Xbox One", 4920},
+                                                        {"NEC PC-FX", 4930},
+                                                        {"NEC TurboGrafx 16", 34},
+                                                        {"NEC TurboGrafx CD", 4955},
                                                         {"Nintendo 64", 3},
-                                                        {"Nintendo DS", 8},
-                                                        {"Nintendo", 7}, 
-                                                        {"Game Boy", 4},
-                                                        {"Game Boy Advance", 5},
-                                                        {"Game Boy Color", 41},
-                                                        {"Gamecube", 2},
-                                                        {"Super Nintendo", 6},
+                                                        {"Nintendo Famicom Disk System", 4936},
+                                                        {"Nintendo GameCube", 2},
+                                                        {"Nintendo NES", 7},
+                                                        {"Nintendo SNES", 6},
+                                                        {"Nintendo Virtual Boy", 4918},
                                                         {"Nintendo Wii", 9},
                                                         {"Nintendo Wii U", 38},
-                                                        {"PC", 1},
+                                                        {"Panasonic 3DO", 25},
+                                                        {"Philips CD-i", 4917},
                                                         {"Sega 32X", 33},
                                                         {"Sega CD", 21},
-                                                        {"Dreamcast", 16},
-                                                        {"Game Gear", 20},
-                                                        {"Sega Genesis", 18},
+                                                        {"Sega Dreamcast", 16},
                                                         {"Sega Master System", 35},
                                                         {"Sega Mega Drive", 36},
                                                         {"Sega Saturn", 17},
+                                                        {"Sega SG-1000 & SG-1000II", 4949},
+                                                        {"SNK Neo-Geo AES", 24},
+                                                        {"SNK Neo-Geo CD", 4956},
                                                         {"Sony Playstation", 10},
-                                                        {"PS2", 11},
-                                                        {"PS3", 12},
-                                                        {"PS4", 4919},
-                                                        {"PSP", 13},
-                                                        {"TurboGrafx 16", 34},
-                                                        {"TurboGrafx CD", 34},
-                                                        {"Windows", 1}
+                                                        {"Sony Playstation 2", 11},
+                                                        {"Sony Playstation 3", 12},
+                                                        {"Sony Playstation 4", 4919},
+                                                        {"Atari Lynx", 4924},
+                                                        {"Bandai Wonderswan", 4925},
+                                                        {"Bandai Wonderswan Color", 4926},
+                                                        {"Nintendo 3DS", 4912},
+                                                        {"Nintendo DS", 8},
+                                                        {"Nintendo Game Boy", 4},
+                                                        {"Nintendo Game Boy Advance", 5},
+                                                        {"Nintendo Game Boy Color", 41},
+                                                        {"Sega Game Gear", 20},
+                                                        {"SNK Neo-Geo Pocket", 4922},
+                                                        {"SNK Neo-Geo Pocket Color", 4923},
+                                                        {"Sony PSP", 13},
+                                                        {"Sony PSVita", 39},
+                                                        {"Apple iOS", 4915},
+                                                        {"Google Android", 4916},
+                                                        {"Commodore Vic-20", 4945},
+                                                        {"Microsoft MSX", 4929},
+                                                        {"Microsoft Windows", 1},
+                                                        {"NEC PC-88", 4933},
+                                                        {"NEC-PC-98", 4934},
+                                                        {"Sharp X68000", 4931},
+                                                        {"Sinclair ZX Spectrum", 4913}
                                                     };
 
         public static string AttemptGetGamePlatformTypeFromPath(IFileSystem fileSystem, string path)
@@ -89,14 +111,11 @@ namespace GameBrowser.Resolvers
 
             switch (platform)
             {
-                case "3DO":
-                    return "Panasonic3DO";
-
-                case "Amiga":
-                    return "Amiga";
-
                 case "Arcade":
                     return "Arcade";
+
+                case "Amstrad GX4000":
+                    return "GX4000";
 
                 case "Atari 2600":
                     return "Atari2600";
@@ -107,64 +126,82 @@ namespace GameBrowser.Resolvers
                 case "Atari 7800":
                     return "Atari7800";
 
-                case "Atari XE":
-                    return "AtariXE";
-
                 case "Atari Jaguar":
                     return "AtariJaguar";
 
                 case "Atari Jaguar CD":
                     return "AtariJaguarCD";
 
-                case "Colecovision":
-                    return "Colecovision";
+                case "Atari XE":
+                    return "AtariXE";
 
-                case "Commodore 64":
-                    return "Commodore64";
+                case "Bally Astrocade":
+                    return "Astrocade";
 
-                case "Commodore Vic-20":
-                    return "CommodoreVic20";
+                case "ColecoVision":
+                    return "ColecoVision";
 
-                case "Intellivision":
+                case "Commodore Amiga CD32":
+                    return "AmigaCD32";
+
+                case "Entex Adventure Vision":
+                    return "AdventureVision";
+
+                case "Fairchild Channel F":
+                    return "ChannelF";
+
+                case "GCE Vectrex":
+                    return "Vectrex";
+
+                case "Magnavox Odyssey":
+                    return "Odyssey";
+
+                case "Magnavox Odyssey 2":
+                    return "Odyssey2";
+
+                case "Mattel Intellivision":
                     return "Intellivision";
 
-                case "Xbox":
-                    return "MicrosoftXBox";
+                case "Microsoft Xbox":
+                    return "Xbox";
 
-                case "Xbox 360":
-                    return "MicrosoftXBox360";
+                case "Microsoft Xbox 360":
+                    return "Xbox360";
 
-                case "Xbox One":
-                    return "MicrosoftXBoxOne";
+                case "Microsoft Xbox One":
+                    return "XboxOne";
 
-                case "Neo Geo":
-                    return "NeoGeo";
+                case "NEC PC-FX":
+                    return "PCFX";
+
+                case "NEC SuperGrafx":
+                    return "SuperGrafx";
+
+                case "NEC TurboGrafx 16":
+                    return "TurboGrafx16";
+
+                case "NEC TurboGrafx CD":
+                    return "TurboGrafxCD";
 
                 case "Nintendo 64":
                     return "Nintendo64";
 
-                case "Nintendo DS":
-                    return "NintendoDS";
+                case "Nintendo Famicom Disk System":
+                    return "FamicomDiskSystem";
 
-                case "Nintendo":
-                    return "Nintendo";
+                case "Nintendo GameCube":
+                    return "GameCube";
 
-                case "Game Boy":
-                    return "NintendoGameBoy";
+                case "Nintendo NES":
+                    return "NES";
 
-                case "Game Boy Advance":
-                    return "NintendoGameBoyAdvance";
+                case "Nintendo SNES":
+                    return "SNES";
 
-                case "Game Boy Color":
-                    return "NintendoGameBoyColor";
+                case "Nintendo Switch":
+                    return "Switch";
 
-                case "Gamecube":
-                    return "NintendoGameCube";
-
-                case "Super Nintendo":
-                    return "SuperNintendo";
-
-                case "Virtual Boy":
+                case "Nintendo Virtual Boy":
                     return "VirtualBoy";
 
                 case "Nintendo Wii":
@@ -173,11 +210,11 @@ namespace GameBrowser.Resolvers
                 case "Nintendo Wii U":
                     return "WiiU";
 
-                case "DOS":
-                    return "DOS";
+                case "Panasonic 3DO":
+                    return "3DO";
 
-                case "Windows":
-                    return "Windows";
+                case "Philips CD-i":
+                    return "CD-i";
 
                 case "Sega 32X":
                     return "Sega32X";
@@ -185,48 +222,137 @@ namespace GameBrowser.Resolvers
                 case "Sega CD":
                     return "SegaCD";
 
-                case "Dreamcast":
-                    return "SegaDreamcast";
+                case "Sega CD 32X":
+                    return "SegaCD32X";
 
-                case "Game Gear":
-                    return "SegaGameGear";
-
-                case "Sega Genesis":
-                    return "SegaGenesis";
+                case "Sega Dreamcast":
+                    return "Dreamcast";
 
                 case "Sega Master System":
-                    return "SegaMasterSystem";
+                    return "MasterSystem";
 
                 case "Sega Mega Drive":
-                    return "SegaMegaDrive";
+                    return "MegaDrive";
 
                 case "Sega Saturn":
-                    return "SegaSaturn";
+                    return "Saturn";
+
+                case "Sega SG-1000 & SG-1000II":
+                    return "SG1000&SG1000II";
+
+                case "SNK Neo-Geo AES":
+                    return "NeoGeoAES";
+
+                case "SNK Neo-Geo CD":
+                    return "NeoGeoCD";
 
                 case "Sony Playstation":
-                    return "SonyPlaystation";
+                    return "Playstation";
 
-                case "PS2":
-                    return "SonyPlaystation2";
+                case "Sony Playstation 2":
+                    return "Playstation2";
 
-                case "PS3":
-                    return "SonyPlaystation3";
+                case "Sony Playstation 3":
+                    return "Playstation3";
 
-                case "PS4":
-                    return "SonyPlaystation4";
+                case "Sony Playstation 4":
+                    return "Playstation4";
 
-                case "PSP":
-                    return "SonyPSP";
+                case "WoW Action Max":
+                    return "ActionMax";
 
-                case "TurboGrafx 16":
-                    return "TurboGrafx16";
+                case "Atari Lynx":
+                    return "Lynx";
 
-                case "TurboGrafx CD":
-                    return "TurboGrafxCD";
+                case "Bandai Wonderswan":
+                    return "Wonderswan";
 
-                case "ZX Spectrum":
-                    return "ZxSpectrum";
+                case "Bandai Wonderswan Color":
+                    return "WonderswanColor";
 
+                case "Nintendo 3DS":
+                    return "3DS";
+
+                case "Nintendo DS":
+                    return "DS";
+
+                case "Nintendo Game Boy":
+                    return "GameBoy";
+
+                case "Nintendo Game Boy Advance":
+                    return "GameBoyAdvance";
+
+                case "Nintendo Game Boy Color":
+                    return "GameBoyColor";
+
+                case "Sega Game Gear":
+                    return "GameGear";
+
+                case "SNK Neo-Geo Pocket":
+                    return "NeoGeoPocket";
+
+                case "SNK Neo-Geo Pocket Color":
+                    return "NeoGeoPocketColor";
+
+                case "Sony PSP":
+                    return "PSP";
+
+                case "Sony PSVita":
+                    return "PSVita";
+
+                case "Apple iOS":
+                    return "iOS";
+
+                case "Google Android":
+                    return "Android";
+
+                case "Microsoft Windows 10 UWP":
+                    return "Windows10UWP";
+
+                case "Commodore Vic-20":
+                    return "Vic20";
+
+                case "Fujitsu FM Towns":
+                    return "FMTowns";
+
+                case "Fujitsu FM-7":
+                    return "FM7";
+
+                case "Microsoft MS-DOS":
+                    return "DOS";
+
+                case "Microsoft MSX":
+                    return "MSX";
+
+                case "Microsoft MSX-2":
+                    return "MSX2";
+
+                case "Microsoft Windows":
+                    return "Windows";
+
+                case "NEC PC-60":
+                    return "PC60";
+
+                case "NEC PC-80":
+                    return "PC80";
+
+                case "NEC PC-88":
+                    return "PC88";
+
+                case "NEC-PC-98":
+                    return "PC98";
+
+                case "Sega SC-3000":
+                    return "SC3000";
+
+                case "Sharp X1":
+                    return "SharpX1";
+
+                case "Sharp X68000":
+                    return "SharpX68000";
+
+                case "Sinclair ZX Spectrum":
+                    return "ZXSpectrum";
             }
             return null;
         }
@@ -240,14 +366,11 @@ namespace GameBrowser.Resolvers
 
             switch (platform)
             {
-                case "3DO":
-                    return "Panasonic3doGame";
-
-                case "Amiga":
-                    return "AmigaGame";
-
                 case "Arcade":
                     return "ArcadeGame";
+
+                case "Amstrad GX4000":
+                    return "GX4000Game";
 
                 case "Atari 2600":
                     return "Atari2600Game";
@@ -258,126 +381,233 @@ namespace GameBrowser.Resolvers
                 case "Atari 7800":
                     return "Atari7800Game";
 
-                case "Atari XE":
-                    return "AtariXeGame";
-
                 case "Atari Jaguar":
-                    return "JaguarGame";
+                    return "AtariJaguarGame";
 
                 case "Atari Jaguar CD":
-                    return "JaguarGame";
+                    return "AtariJaguarCDGame";
 
-                case "Colecovision":
-                    return "ColecovisionGame";
+                case "Atari XE":
+                    return "AtariXEGame";
 
-                case "Commodore 64":
-                    return "C64Game";
+                case "Bally Astrocade":
+                    return "AstrocadeGame";
 
-                case "Commodore Vic-20":
-                    return "Vic20Game";
+                case "ColecoVision":
+                    return "ColecoVisionGame";
 
-                case "Intellivision":
+                case "Commodore Amiga CD32":
+                    return "AmigaCD32Game";
+
+                case "Entex Adventure Vision":
+                    return "AdventureVisionGame";
+
+                case "Fairchild Channel F":
+                    return "ChannelFGame";
+
+                case "GCE Vectrex":
+                    return "VectrexGame";
+
+                case "Magnavox Odyssey":
+                    return "OdysseyGame";
+
+                case "Magnavox Odyssey 2":
+                    return "Odyssey2Game";
+
+                case "Mattel Intellivision":
                     return "IntellivisionGame";
 
-                case "Xbox":
+                case "Microsoft Xbox":
                     return "XboxGame";
 
-                case "Xbox 360":
+                case "Microsoft Xbox 360":
                     return "Xbox360Game";
 
-                case "Xbox One":
+                case "Microsoft Xbox One":
                     return "XboxOneGame";
 
-                case "Neo Geo":
-                    return "NeoGeoGame";
+                case "NEC PC-FX":
+                    return "PCFXGame";
+
+                case "NEC SuperGrafx":
+                    return "SuperGrafxGame";
+
+                case "NEC TurboGrafx 16":
+                    return "TurboGrafx16Game";
+
+                case "NEC TurboGrafx CD":
+                    return "TurboGrafxCDGame";
 
                 case "Nintendo 64":
-                    return "N64Game";
+                    return "Nintendo64Game";
 
-                case "Nintendo DS":
-                    return "NesGame";
+                case "Nintendo Famicom Disk System":
+                    return "FamicomDiskSystemGame";
 
-                case "Nintendo":
-                    return "NesGame";
-
-                case "Game Boy":
-                    return "GameBoyGame";
-
-                case "Game Boy Advance":
-                    return "GameBoyAdvanceGame";
-
-                case "Game Boy Color":
-                    return "GameBoyColorGame";
-
-                case "Gamecube":
+                case "Nintendo GameCube":
                     return "GameCubeGame";
 
-                case "Super Nintendo":
-                    return "SnesGame";
+                case "Nintendo NES":
+                    return "NESGame";
 
-                case "Virtual Boy":
-                    return "NesGame";
+                case "Nintendo SNES":
+                    return "SNESGame";
+
+                case "Nintendo Switch":
+                    return "SwitchGame";
+
+                case "Nintendo Virtual Boy":
+                    return "VirtualBoyGame";
 
                 case "Nintendo Wii":
-                    return "NesGame";
+                    return "WiiGame";
 
                 case "Nintendo Wii U":
                     return "WiiUGame";
 
-                case "DOS":
-                    return "DosGame";
+                case "Panasonic 3DO":
+                    return "3DOGame";
 
-                case "Windows":
-                    return "WindowsGame";
+                case "Philips CD-i":
+                    return "CD-iGame";
 
                 case "Sega 32X":
-                    return "GenesisGame";
+                    return "Sega32XGame";
 
                 case "Sega CD":
-                    return "GenesisGame";
+                    return "SegaCDGame";
 
-                case "Dreamcast":
-                    return "GenesisGame";
+                case "Sega CD 32X":
+                    return "SegaCD32XGame";
 
-                case "Game Gear":
-                    return "GenesisGame";
-
-                case "Sega Genesis":
-                    return "GenesisGame";
+                case "Sega Dreamcast":
+                    return "DreamcastGame";
 
                 case "Sega Master System":
-                    return "GenesisGame";
+                    return "MasterSystemGame";
 
                 case "Sega Mega Drive":
-                    return "GenesisGame";
+                    return "MegaDriveGame";
 
                 case "Sega Saturn":
-                    return "GenesisGame";
+                    return "SaturnGame";
+
+                case "Sega SG-1000 & SG-1000II":
+                    return "SG1000&SG1000IIGame";
+
+                case "SNK Neo-Geo AES":
+                    return "NeoGeoAESGame";
+
+                case "SNK Neo-Geo CD":
+                    return "NeoGeoCDGame";
 
                 case "Sony Playstation":
-                    return "PsOneGame";
+                    return "PlaystationGame";
 
-                case "PS2":
-                    return "Ps2Game";
+                case "Sony Playstation 2":
+                    return "Playstation2Game";
 
-                case "PS3":
-                    return "Ps3Game";
+                case "Sony Playstation 3":
+                    return "Playstation3Game";
 
-                case "PS4":
-                    return "Ps4Game";
+                case "Sony Playstation 4":
+                    return "Playstation4Game";
 
-                case "PSP":
-                    return "PlayStationPortableGame";
+                case "WoW Action Max":
+                    return "ActionMaxGame";
 
-                case "TurboGrafx 16":
-                    return "TurboGrafx16Game";
+                case "Atari Lynx":
+                    return "LynxGame";
 
-                case "TurboGrafx CD":
-                    return "TurboGrafx16Game";
+                case "Bandai Wonderswan":
+                    return "WonderswanGame";
 
-                case "ZX Spectrum":
+                case "Bandai Wonderswan Color":
+                    return "WonderswanColorGame";
+
+                case "Nintendo 3DS":
+                    return "3DSGame";
+
+                case "Nintendo DS":
+                    return "DSGame";
+
+                case "Nintendo Game Boy":
+                    return "GameBoyGame";
+
+                case "Nintendo Game Boy Advance":
+                    return "GameBoyAdvanceGame";
+
+                case "Nintendo Game Boy Color":
+                    return "GameBoyColorGame";
+
+                case "Sega Game Gear":
+                    return "GameGearGame";
+
+                case "SNK Neo-Geo Pocket":
+                    return "NeoGeoPocketGame";
+
+                case "SNK Neo-Geo Pocket Color":
+                    return "NeoGeoPocketColorGame";
+
+                case "Sony PSP":
+                    return "PSPGame";
+
+                case "Sony PSVita":
+                    return "PSVitaGame";
+
+                case "Apple iOS":
+                    return "iOSGame";
+
+                case "Google Android":
+                    return "AndroidGame";
+
+                case "Microsoft Windows 10 UWP":
+                    return "Windows10UWPGame";
+
+                case "Commodore Vic-20":
+                    return "Vic20Game";
+
+                case "Fujitsu FM Towns":
+                    return "FMTownsGame";
+
+                case "Fujitsu FM-7":
+                    return "FM7Game";
+
+                case "Microsoft MS-DOS":
+                    return "DOSGame";
+
+                case "Microsoft MSX":
+                    return "MSXGame";
+
+                case "Microsoft MSX-2":
+                    return "MSX2Game";
+
+                case "Microsoft Windows":
+                    return "WindowsGame";
+
+                case "NEC PC-60":
+                    return "PC60Game";
+
+                case "NEC PC-80":
+                    return "PC80Game";
+
+                case "NEC PC-88":
+                    return "PC88Game";
+
+                case "NEC-PC-98":
+                    return "PC98Game";
+
+                case "Sega SC-3000":
+                    return "SC3000Game";
+
+                case "Sharp X1":
+                    return "SharpX1Game";
+
+                case "Sharp X68000":
+                    return "SharpX68000Game";
+
+                case "Sinclair ZX Spectrum":
                     return "ZXSpectrumGame";
-
             }
             return null;
         }
