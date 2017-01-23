@@ -152,7 +152,7 @@ namespace GameBrowser.Resolvers
                     return new[] { ".a78" };
 
                 case "Atari Jaguar":
-                    return new[] { ".jag" };
+                    return new[] { ".jag", ".j64" };
 
                 case "Atari Jaguar CD":
                     return new[] { ".cdi" };
